@@ -13,10 +13,10 @@
 
 
 :root {
-    --bg-color: #49111C;
-    --second-bg-color: #EFC88B;
-    --text-color: #fff;
-    --main-color: #0E3B43;
+    --bg-color: #003049;
+    --second-bg-color: #C1121F;
+    --text-color: #FDF0D5;
+    --main-color: #780000;
 }
 
 html{
@@ -53,4 +53,9 @@ body {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
+    transition: 3ms;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
 }
