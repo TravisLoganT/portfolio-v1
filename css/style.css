@@ -13,10 +13,10 @@
 
 
 :root {
-    --bg-color: #003049;
-    --second-bg-color: #669BBC;
-    --text-color: #FDF0D5;
-    --main-color: #780000;
+    --bg-color: #2C2C54;
+    --second-bg-color: #ACBED8;
+    --text-color: #EFE9E7;
+    --main-color: #FFA200;
 }
 
 html{
@@ -144,4 +144,35 @@ span {
 
 .btn:hover {
     box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
