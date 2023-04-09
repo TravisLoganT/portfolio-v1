@@ -86,7 +86,20 @@ section {
 .home-img img {
     border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;
     border: 7px solid var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
     transition: .5s ease;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% { 
+        transform: translateY(0);
+    }
 }
 
 .home-img img:hover {

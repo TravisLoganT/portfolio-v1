@@ -40,3 +40,19 @@ navbar.classList.remove('active');
 
 
 }
+
+/* ----- scroll reveal ----- */
+ScrollReveal({
+    reset: true,
+    distance: '160px',
+    duration: 1500,
+    delay: 100
+});
+
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.skills-container, .title, .projects-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .home-img,  .about-content', {origin: 'right'});
+
+
+
