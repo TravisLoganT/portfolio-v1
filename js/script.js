@@ -55,4 +55,23 @@ ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .home-img,  .about-content', {origin: 'right'});
 
 
+/* ----- types js ----- */
+const typed = new Typed('.multiple-text', {
+    strings: ['Fullstack Engineer', 'Software Developer', 'University Student', 'Bartender',
+'UI/UX Designer'],
+    typeSpeed: 80,
+    backSpeed: 40,
+    backDelay: 1000,
+    loop: true
+});
+
+const typed2 = new Typed('.multiple-text2', {
+    strings: ['Versatile Fullstack Developer',
+        'Innovative Programmer',
+        'Tech Enthusiast'],
+        typeSpeed: 80 ,
+        backSpeed: 40,
+        backDelay: 1000,
+        loop: true
+});
 
