@@ -82,6 +82,12 @@ section {
 .home-img img {
     border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;
     border: 7px solid var(--main-color);
+    transition: .5s ease;
+}
+
+.home-img img:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-12.5px);
 }
 
 .home-content h3{
@@ -157,7 +163,14 @@ span {
 }
 
 .about-img img {
-    width: 35vw;
+    border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;
+    border: 7px solid var(--main-color);
+    transition: .5s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-12.5px);
 }
 
 .heading {
