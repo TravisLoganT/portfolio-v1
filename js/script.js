@@ -75,3 +75,16 @@ const typed2 = new Typed('.multiple-text2', {
         loop: true
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    readMoreButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const skillsBox = event.target.closest('.skills-box');
+            skillsBox.classList.toggle('expanded');
+        });
+    });
+});
+
