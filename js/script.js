@@ -50,9 +50,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.skills-container, .title, .projects-box, .contact form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .home-img,  .about-content', {origin: 'right'});
+ScrollReveal().reveal('.skills-container,  .projects-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .title, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .home-img, .about-content', {origin: 'right'});
 
 
 /* ----- types js ----- */
@@ -87,4 +87,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const readMoreBtns = document.querySelectorAll('.read-more');
+readMoreBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const project = btn.parentNode;
+    const details = project.querySelector('.extra-content');
+    details.classList.toggle('hidden');
+    btn.textContent = details.classList.contains('hidden') ? 'Read More' : 'Read Less';
+  });
+});
+
 

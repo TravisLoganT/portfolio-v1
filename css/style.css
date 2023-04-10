@@ -287,6 +287,14 @@ background: var(--second-bg-color);
     margin-bottom: 4rem;
 }
 
+.project-layer h4 {
+    color: var(--main-color);
+}
+
+.project-layer p{
+    color: var(--main-color);
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -296,6 +304,8 @@ background: var(--second-bg-color);
 
 .projects-container .projects-box {
     position: relative;
+    width: 100%; /* Add a fixed width */
+    height: 300px; /* Add a fixed height */
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
@@ -304,6 +314,8 @@ background: var(--second-bg-color);
 
 .projects-box img {
     width: 100%;
+    height: 100%; /* Add a fixed height */
+    object-fit: cover; /* Make sure the image covers the box */
     transition: .5s ease;
 }
 
@@ -317,17 +329,32 @@ background: var(--second-bg-color);
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1),
-     var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .8),
+     var(--text-color));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 1rem;
     transform: translateY(100%);
     transition: .5s ease;
 }
+
+.project-layer .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+  
+  .project-layer .icon-container a:first-child {
+    margin-right: 0.5rem;
+  }
+  
+  .project-layer .icon-container a:last-child {
+    margin-left: 0.5rem;
+  }
 
 .projects-box:hover .project-layer{
     transform: translateY(0);
@@ -348,11 +375,12 @@ background: var(--second-bg-color);
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--main-color);
     border-radius: 50%;
 }
 
 .project-layer a i {
+    align-items: center;
     font-size: 2rem;
     color: var(--second-bg-color);
 }
