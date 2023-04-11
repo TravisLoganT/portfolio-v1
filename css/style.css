@@ -320,8 +320,9 @@ background: var(--second-bg-color);
 }
 
 .projects-box:hover img {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
+
 
 .projects-box .project-layer {
     position: absolute;
@@ -347,6 +348,7 @@ background: var(--second-bg-color);
     align-items: center;
     width: 45%;
   }
+  
   
   .project-layer .icon-container a:first-child {
     margin-right: 0.5rem;

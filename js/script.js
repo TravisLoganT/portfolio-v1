@@ -46,7 +46,13 @@ ScrollReveal({
     reset: true,
     distance: '160px',
     duration: 1500,
-    delay: 100
+    delay: 100,
+    afterReveal: function (domEl) {
+        const readMoreButton = document.getElementById('read-more-button');
+        if (readMoreButton && !domEl.classList.contains('read-more')) {
+          readMoreButton.textContent = 'Read Less';
+        }
+      },
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
@@ -84,18 +90,25 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const skillsBox = event.target.closest('.skills-box');
             skillsBox.classList.toggle('expanded');
+            if (skillsBox.classList.contains('expanded')) {
+              button.textContent = 'Read Less';
+            } else {
+              button.textContent = 'Read More';
+            }
         });
     });
 });
 
-const readMoreBtns = document.querySelectorAll('.read-more');
-readMoreBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const project = btn.parentNode;
-    const details = project.querySelector('.extra-content');
-    details.classList.toggle('hidden');
-    btn.textContent = details.classList.contains('hidden') ? 'Read More' : 'Read Less';
+window.addEventListener('scroll', function() {
+    const expandedElements = document.querySelectorAll('.skills-box.expanded');
+    expandedElements.forEach(function(expandedElement) {
+      const bounding = expandedElement.getBoundingClientRect();
+      const readMoreButton = expandedElement.querySelector('.read-more');
+      if (bounding.bottom < 0 || bounding.top > window.innerHeight) {
+        expandedElement.classList.remove('expanded');
+        readMoreButton.textContent = 'Read More';
+        }
+    });
   });
-});
 
 
