@@ -54,10 +54,10 @@ ScrollReveal({
       },
 });
 
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.skills-container,  .projects-box, .contact form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .title, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .home-img, .about-content', {origin: 'right'});
+ScrollReveal().reveal('.home-content, .heading, .div2', {origin: 'top'});
+ScrollReveal().reveal('.skills-container,  .projects-box, .contact form, .div5', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .title, .about-img, .div1, .div4', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .home-img, .about-content, .div3', {origin: 'right'});
 
 
 /* ----- types js ----- */
