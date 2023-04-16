@@ -579,6 +579,14 @@ span {
     margin-bottom: 0.8rem;
 }
 
+.div4 .review h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+	color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;}
+
 .div1 .review p
 {
 	font-size: 1.4rem;
@@ -600,7 +608,7 @@ span {
 
 .div4 .review p
 {
-	font-size: 0.85rem;
+	font-size: 1.05rem;
     color: white;
     font-weight: 550;
     opacity: 80%;
@@ -617,21 +625,77 @@ span {
 }
 
 
+@media only screen and (max-width: 1200px)
+{
+	.innerdiv
+	{
+		transform: scale(1.6);
+	}
+}
+
 @media only screen and (max-width: 1000px)
 {
 	.innerdiv
 	{
-		transform: scale(0.7);
+		transform: scale(1.2);
 	}
 }
-@media only screen and (max-width: 800px)
+
+@media only screen and (max-width: 900px)
 {
 	.innerdiv
 	{
-		transform: scale(0.6);
+		transform: scale(1.1);
 	}
 }
-@media only screen and (max-width: 600px)
+
+
+@media only screen and (max-width: 800px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+        
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1.1);
+		margin: 4rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 617px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+}
+
+@media only screen and (max-width: 450px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+}
+@media only screen and (max-width: 365px)
 {
 	.div1 {
 		background-position-x: 10rem;
