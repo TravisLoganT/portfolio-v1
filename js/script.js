@@ -53,16 +53,22 @@ ScrollReveal({
         }
     },
 });
-/* ----- heading scroll animations ----- */
-ScrollReveal().reveal('.logo, .multiple-text3', { origin: 'top' , delay: 0, once: true});
+
 
 /* ----- home scroll animations ----- */
-ScrollReveal().reveal('.name-intro', { origin: 'left', delay: 1300, cleanup: true});
-ScrollReveal().reveal('.home-img', {origin: 'right', delay: 1300, cleanup: true});
-ScrollReveal().reveal('.home-description', { delay: 2000, cleanup: true });
-ScrollReveal().reveal('.home-text', {origin: 'left', delay: 3600, cleanup: true});
-ScrollReveal().reveal('.social-media', {origin: 'bottom', delay: 3800});
-ScrollReveal().reveal('.CV', {origin: 'bottom', delay: 4000});
+ScrollReveal().reveal('.multiple-text3', { origin: 'top', delay: 0, once: true });
+ScrollReveal().reveal('.name-intro', { origin: 'left', delay: 1300 });
+ScrollReveal().reveal('.home-img', { origin: 'right', delay: 1300 });
+ScrollReveal().reveal('.home-description', { delay: 2000 });
+ScrollReveal().reveal('.home-text', { origin: 'left', delay: 3600 });
+ScrollReveal().reveal('.social-media', { origin: 'bottom', delay: 3800 });
+ScrollReveal().reveal('.CV', { origin: 'bottom', delay: 4000 });
+
+/* ----- about section animations ----- */
+ScrollReveal().reveal('.heading', { origin: 'top', delay: 200 })
+ScrollReveal().reveal('.about-strings', { origin: 'bottom', delay: 1000 })
+ScrollReveal().reveal('.about-img', { origin: 'left', delay: 700 })
+ScrollReveal().reveal('.about-description', { origin: 'right', delay: 1500 })
 
 
 
@@ -83,13 +89,14 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 40,
     backDelay: 1000,
     loop: true
+
 });
 
 const typed2 = new Typed('.multiple-text2', {
+    startDelay: 1200,
     strings: ['Versatile Fullstack Developer',
         'Innovative Programmer',
         'Tech Enthusiast'],
-
     typeSpeed: 80,
     backSpeed: 40,
     backDelay: 1000,
