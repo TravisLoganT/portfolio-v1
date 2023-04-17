@@ -80,6 +80,36 @@ const typed2 = new Typed('.multiple-text2', {
         loop: true
 });
 
+/* ----- typed greeting ----- */
+let currentDate = new Date();
+let currentTime = currentDate.getHours();
+
+if (currentTime > 4 && currentTime < 12) {
+    const greeting = new Typed('.multiple-text3', {
+        strings: ['Good Morning'],
+        typeSpeed: 300,
+        loop: false,
+        showCursor: false
+    })
+}
+else if (currentTime > 12 && currentTime < 19) {
+    const greeting = new Typed('.multiple-text3', {
+        strings: ['Good Afternoon'],
+        typeSpeed: 50,
+        loop: false,
+        showCursor: false
+    })
+}
+
+else {
+    const greeting = new Typed('.multiple-text3', {
+        strings: ['Good Evening'],
+        typeSpeed: 100,
+        loop: false,
+        showCursor: false
+    })
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const readMoreButtons = document.querySelectorAll('.read-more');

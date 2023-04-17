@@ -125,6 +125,11 @@ section {
     transform: translateY(-12.5px);
 }
 
+.home-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -356,7 +361,7 @@ span {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, .8),
-            var(--second-bg-color));
+            var(--text-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,12 +617,12 @@ span {
     color: white;
     font-weight: 550;
     opacity: 80%;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .div5 .review p
 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
     color: white;;
     font-weight: 500;
     opacity: 80%;
