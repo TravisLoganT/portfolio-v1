@@ -77,6 +77,14 @@ ScrollReveal().reveal('.skills-container', { origin: 'bottom', delay: 300});
 /* ----- projects section animations ----- */
 ScrollReveal().reveal('.projects-box', { origin: 'bottom'});
 
+/* ----- testimony section animations ----- */
+ScrollReveal().reveal('.div1', {origin: 'left', delay: 250})
+ScrollReveal().reveal('.div2', {origin: 'top', delay: 900})
+ScrollReveal().reveal('.div3', {origin: 'right', delay: 1700})
+ScrollReveal().reveal('.div4', {origin: 'left', delay: 2600})
+ScrollReveal().reveal('.div5', {origin: 'bottom', delay: 3500})
+
+
 /*
 ScrollReveal().reveal('.heading, .div2', {origin: 'top', delay: 500});
 ScrollReveal().reveal('.skills-container,  .projects-box, .contact form, .div5', {origin: 'bottom'});
