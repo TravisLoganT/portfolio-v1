@@ -65,12 +65,17 @@ ScrollReveal().reveal('.social-media', { origin: 'bottom', delay: 3800 });
 ScrollReveal().reveal('.CV', { origin: 'bottom', delay: 4000 });
 
 /* ----- about section animations ----- */
-ScrollReveal().reveal('.heading', { origin: 'top', delay: 200 })
-ScrollReveal().reveal('.about-strings', { origin: 'bottom', delay: 1000 })
-ScrollReveal().reveal('.about-img', { origin: 'left', delay: 700 })
-ScrollReveal().reveal('.about-description', { origin: 'right', delay: 1500 })
+ScrollReveal().reveal('.heading', { origin: 'top', delay: 200 });
+ScrollReveal().reveal('.about-strings', { origin: 'bottom', delay: 1000 });
+ScrollReveal().reveal('.about-img', { origin: 'left', delay: 700 });
+ScrollReveal().reveal('.about-description', { origin: 'right', delay: 1500 });
 
+/* ----- skills section animations ----- */
+ScrollReveal().reveal('.title', { origin: 'left'});
+ScrollReveal().reveal('.skills-container', { origin: 'bottom', delay: 300});
 
+/* ----- projects section animations ----- */
+ScrollReveal().reveal('.projects-box', { origin: 'bottom'});
 
 /*
 ScrollReveal().reveal('.heading, .div2', {origin: 'top', delay: 500});
